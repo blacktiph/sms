@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<title>Joshua Jorgensen | Registration</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- Google Web Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Tauri|Roboto+Condensed:400,300' rel='stylesheet' type='text/css' />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body id="registration">
+	<header id="header">
+		<div class="wrapper">
+			<a href="index.html" title="#"><h1>Joshua Jorgensen</h1></a>
+
+			<nav>
+				<ul>
+					<li><a href="registration.html" title="#">Registration</a></li>
+					<li><a href="blog.html" title="#">Blog</a></li>
+					<li><a href="auto_complete.html" title="#">Auto Complete</a></li>
+					<li><a href="gallery.html" title="#">Image Gallery</a></li>
+					<li><a href="accordion.html" title="#">Accordion</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<div id="main_content">
+
+		<div class="light_bg">
+			<div class="wrapper">
+				<section>
+					<h2>User Registration</h2>
+
+					<form id="registrationForm">
+						<!-- First Name -->
+						<div class="firstName">
+							<label for="firstname"><span>*</span>First Name</label>
+							<input id="firstname" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'John'" placeholder="John" maxlength="50" />
+							<span class="name_errors" id="f_first_error">Needs to be longer than 2 characters</span>
+						</div>
+
+						<!-- Last Name -->
+						<div class="lastName">
+							<label for="lastname"><span>*</span>Last Name</label>
+							<input id="lastname" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Smith'" placeholder="Smith" maxlength="50" />
+							<span class="name_errors" id="f_last_error">Needs to be longer than 2 characters</span>
+						</div>
+						
+
+						<!-- Email -->
+						<label for="email"><span>*</span>Email</label>
+			            <input id="email" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'johnsmith@example.com'" placeholder="johnsmith@example.com"  maxlength="100" />
+			            <span class="f_errors" id="f_email_error">Incorrect email format</span>
+
+			            <!-- Phone -->
+						<label for="phone">Phone</label>
+			            <input id="phone" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = '555-555-5555'" placeholder="561-555-1234"  maxlength="100" />
+			            <span class="f_errors" id="f_phone_error">Must follow this format: 561-555-1234</span>
+
+			            <!-- Website -->
+			            <label for="website"><span></span>Website</label>
+			            <input id="website" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'www.example.com'" placeholder="www.example.com" maxlength="100" />
+
+			            <!-- Username -->
+			            <label for="username"><span>*</span>Choose your username</label>
+			            <input id="username" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'johnsmith'"  placeholder="johnsmith" maxlength="100" />
+			            <span class="f_errors" id="f_username_error">Needs to be longer than 5 characters</span>
+
+			            <!-- Password -->
+			            <label for="password"><span>*</span>Create a password</label>
+			            <input type="password" id="password" maxlength="100" onfocus="this.placeholder = ''" onblur="this.placeholder = '&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;'"  placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" />
+			            <span class="f_errors" id="f_password_error">Needs to be longer than 8 characters</span>
+
+			            <!-- Confirm Password -->
+			            <label for="confirm"><span>*</span>Confirm your password</label>
+			           	<input id="confirm" type="password" maxlength="100" />
+			           	 <span class="f_errors" id="f_confirm_error">Password did not match</span>
+
+			           	 <!-- Send -->
+			           	 <input id="submit" name="submit" type="submit" value="SEND" />
+					</form>
+					
+				</section>
+
+				<img src="images/registration.jpg" alt="Register today" />
+			</div>
+		</div>
+
+		<div class="dark_bg">
+			<div class="wrapper">
+				<h2>User Benefits</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel sapien urna. Aliquam lacus nulla, tincidunt a pellentesque a, dictum quis lorem. Pellentesque euismod diam non tellus dignissim et lacinia sem ornare. Nulla et libero eu lectus aliquam consectetur. Donec tincidunt purus non tortor scelerisque et luctus nibh euismod. Nullam convallis tortor semper magna congue et pharetra urna mollis. Nam iaculis volutpat pulvinar. Sed vehicula mi nec ligula ultrices vel vehicula massa varius. Nunc in velit mi. Vivamus ac mi vel massa laoreet pharetra ac id dolor. Nulla et magna felis. Sed pellentesque mattis purus id aliquet.</p>
+			</div>
+		</div>
+
+	</div><!-- main_content -->
+
+	<footer>
+		<p>Copyright &copy; 2013 - Joshua Jorgensen</p>
+	</footer>
+
+	<!-- ******** Javascript ******** -->
+
+	<!--[if lte IE 8]>
+	<script src="js/html5shiv.js"></script>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/validate_form.js"></script>
+</body>
+</html>

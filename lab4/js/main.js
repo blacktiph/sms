@@ -1,29 +1,24 @@
-(function($){
+// ready_function();
 
-	// var win = $(window);
-	// win = 'hello russ';
-	// console.log(win);
+var flashReady = function() {
 
-	ready_function();
+	$('#playButton').click(function(){
+		// console.log('play button');
+		flash.connect('rtmp://localhost/SMSServer');
+	});
+}
 
-	var flashReady = function() {
+var connected = function(success,error){
+	// console.log('video is playing');
+	flash.startPlaying('rocky.mp4');
+	currentTime();
+	totalTime(); 
+}
 
-		$('#playButton').click(function(){
-			console.log('play button');
-			flash.connect('rtmp://localhost/SMSServer');
-		});
-	}
+var seekTime = function(time){
+	// console.log('time seeking');
+}
 
-	var startPlaying = function(success,error){
-		flash.startPlaying('rocky.mp4');
-		currentTime();
-		totalTime();
-	}
-
-	var stopPlaying = function(success,error) {
-		flash.stopPlaying();
-	}
-
-	
-	
-})(jQuery); // end private scope
+var stopPlaying = function(success,error) {
+	flash.stopPlaying();
+}

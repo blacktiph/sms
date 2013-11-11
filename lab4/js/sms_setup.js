@@ -1,22 +1,22 @@
-console.log('sms setup working');
+// console.log('sms setup working');
 
 var flash;
 function getFlashMovie(movieName) {
-    console.log('getFlashMovie');
+    // console.log('getFlashMovie');
     var isIE = navigator.appName.indexOf("Microsoft") != -1;
     return (isIE) ? window[movieName] : document[movieName];
 }
 function ready_function()
 {
-    console.log('ready_function from sms_setup.js');
+    // console.log('ready_function from sms_setup.js');
 
     if(getFlashMovie("higley_wigley"))
     {
-        console.log('get flash movie - script from sms_setup.js');
+        // console.log('get flash movie - script from sms_setup.js');
         flash = getFlashMovie("higley_wigley");
         flashReady();
     }else {
-        console.log('not working');
+        // console.log('not working');
     }
 }
 // For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection.

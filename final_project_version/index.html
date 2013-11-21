@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<title>Blacktip University | SMS</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- Google Web Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Tauri|Roboto+Condensed:400,300' rel='stylesheet' type='text/css' />
+
+	<!-- Firebase -->
+	<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+	<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase-simple-login.js'></script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="wrapper">
+			<a href="index.html" title="#"><h1>Blacktip University</h1></a>
+			<ul>
+				<li>Learn to catch more blacktips!</li>
+				<li><a id="github_login" href="#">Github Login</a></li>
+				<li><a id="fb_login" href="#">Facebook Login</a></li>
+			</ul>
+
+		</div>
+	</header>
+
+	<div id="main_content">
+
+		<div class="light_bg">
+			<div class="wrapper">
+
+<!-- Video Player Begins -->
+				<section id="video_player">
+
+					<div style="width: 600px; height: 338px;">
+						<div id="flashContent">
+							<script type="text/javascript">
+				                var pageHost = ((document.location.protocol == "https:") ? "https://" : "http://");
+				                document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='" + pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" );
+				            </script>
+				        </div>
+			   		</div>
+
+			   		<ul id="cameraList"></ul>
+			   		<ul id="microphoneList"></ul>
+
+					<div id="seek_bar"><span id="seek_bar_handle"></span></div>
+
+					<ul id="videoControls">
+						<li id="playButton"><span id="playPause" class="fa fa-play"></span></li>
+						<li id="stopButton"><span class="fa fa-stop"></span></li>
+						<li><span id="volume_icon" class="fa fa-volume-up"></span></li>
+						<li>
+							<span id="volume_bar"></span>
+							<span id="volume_slider"></span>
+						</li>
+						<li id="record"><span class="fa fa-circle"></span></li>
+						<li id="microphone"><span class="fa fa-microphone"></span></li>
+						<li id="camera"><span class="fa fa-video-camera"></span></li>
+					</ul>
+
+				</section>
+<!-- Video Player Ends -->
+
+				<aside>
+					<div id="playlist">
+						<h2>Playlist</h2>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</aside>
+
+				<div id="comments">
+					<h2>Comments</h2>
+					<form>
+						<textarea id="commentInput" maxlength="300" placeholder="Leave a comment."></textarea>
+						<button id="submitComment">Submit</button>
+						<p class="commentError"></p>
+					</form>
+
+					<!-- Comments go here -->
+					<div id="AllComments"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="dark_bg">
+			<div class="wrapper">
+
+				<h2>About</h2>
+				<p>We will teach anglers how to successfully catch blacktip sharks from the beach. These teachings will include: rig design, bait deployment, bait selection, drag settings, shark tagging, best practices for catch and release fishing and much more! Anglers will also learn how to catch bait and migratory patterns of baitfish and blacktips. Tactics learned from this course will help anglers improve their overall fishing ability.</p>
+
+			</div>
+		</div>
+
+	</div><!-- main_content -->
+
+	<footer>
+		<p>Copyright &copy; 2013 - Joshua Jorgensen</p>
+	</footer>
+
+</body>
+
+<!-- ============== Javascript ============== -->
+
+<!-- jQuery -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+<!-- jQuery Ui -->
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
+
+<!-- SMS Scripts -->
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/sms_setup.js"></script>
+
+<!-- Main -->
+<script type="text/javascript" src="js/main.js"></script>
+
+<!--[if lte IE 8]>
+<script src="js/html5shiv.js"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+
+</html>
